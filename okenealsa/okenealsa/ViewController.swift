@@ -16,5 +16,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var date_outlet: UIDatePicker!
+    
+    
+    @IBAction func date_action(_ sender: UIDatePicker) {
+    }
+    
+    @IBOutlet weak var text_date: UITextField!
 }
 
