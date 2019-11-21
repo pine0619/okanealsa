@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23FC159E984DB8CA16449290 /* Pods_okenealsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */; };
 		ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BD2373B499003030D4 /* AppDelegate.swift */; };
 		ACBF61C02373B499003030D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BF2373B499003030D4 /* ViewController.swift */; };
 		ACBF61C32373B499003030D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF61C12373B499003030D4 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		ACBF61C82373B49C003030D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF61C62373B49C003030D4 /* LaunchScreen.storyboard */; };
 		ACBF61D32373B49C003030D4 /* okenealsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61D22373B49C003030D4 /* okenealsaTests.swift */; };
 		ACBF61DE2373B49C003030D4 /* okenealsaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61DD2373B49C003030D4 /* okenealsaUITests.swift */; };
+		D26582D49B8A5D6F06EF166E /* Pods_okenealsa_okenealsaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139D7B279C290FCD2C568636 /* Pods_okenealsa_okenealsaUITests.framework */; };
+		EDBFA03ED5E7ACB928349F65 /* Pods_okenealsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C3F4B03FDD35862D38064D /* Pods_okenealsa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139D7B279C290FCD2C568636 /* Pods_okenealsa_okenealsaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsa_okenealsaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2484A8326993310768FFB60E /* Pods-okenealsaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsaTests.debug.xcconfig"; path = "Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		43142990BAFFAC4555C60561 /* Pods-okenealsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa.release.xcconfig"; path = "Target Support Files/Pods-okenealsa/Pods-okenealsa.release.xcconfig"; sourceTree = "<group>"; };
+		68A5591F690499BFEDAABBDE /* Pods-okenealsa-okenealsaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.debug.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D5531C343C345BB19014B90 /* Pods-okenealsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsaTests.release.xcconfig"; path = "Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests.release.xcconfig"; sourceTree = "<group>"; };
+		7485037A2221908E58623957 /* Pods-okenealsa-okenealsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.release.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF61BA2373B499003030D4 /* okenealsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okenealsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF61BD2373B499003030D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBF61BF2373B499003030D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		ACBF61D92373B49C003030D4 /* okenealsaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okenealsaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF61DD2373B49C003030D4 /* okenealsaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = okenealsaUITests.swift; sourceTree = "<group>"; };
 		ACBF61DF2373B49C003030D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC8D1221C553085BDD6A9DB /* Pods-okenealsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa.debug.xcconfig"; path = "Target Support Files/Pods-okenealsa/Pods-okenealsa.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C3F4B03FDD35862D38064D /* Pods_okenealsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBFA03ED5E7ACB928349F65 /* Pods_okenealsa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FC159E984DB8CA16449290 /* Pods_okenealsaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D26582D49B8A5D6F06EF166E /* Pods_okenealsa_okenealsaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A682D1EF99B3471740ADCFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1C3F4B03FDD35862D38064D /* Pods_okenealsa.framework */,
+				139D7B279C290FCD2C568636 /* Pods_okenealsa_okenealsaUITests.framework */,
+				7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ACBF61B12373B499003030D4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				ACBF61D12373B49C003030D4 /* okenealsaTests */,
 				ACBF61DC2373B49C003030D4 /* okenealsaUITests */,
 				ACBF61BB2373B499003030D4 /* Products */,
+				D86FE11427DE0BFD9131A690 /* Pods */,
+				6A682D1EF99B3471740ADCFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,20 @@
 			path = okenealsaUITests;
 			sourceTree = "<group>";
 		};
+		D86FE11427DE0BFD9131A690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBC8D1221C553085BDD6A9DB /* Pods-okenealsa.debug.xcconfig */,
+				43142990BAFFAC4555C60561 /* Pods-okenealsa.release.xcconfig */,
+				68A5591F690499BFEDAABBDE /* Pods-okenealsa-okenealsaUITests.debug.xcconfig */,
+				7485037A2221908E58623957 /* Pods-okenealsa-okenealsaUITests.release.xcconfig */,
+				2484A8326993310768FFB60E /* Pods-okenealsaTests.debug.xcconfig */,
+				6D5531C343C345BB19014B90 /* Pods-okenealsaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBF61E22373B49C003030D4 /* Build configuration list for PBXNativeTarget "okenealsa" */;
 			buildPhases = (
+				67BC5FAC4B08F1D837A7A349 /* [CP] Check Pods Manifest.lock */,
 				ACBF61B62373B499003030D4 /* Sources */,
 				ACBF61B72373B499003030D4 /* Frameworks */,
 				ACBF61B82373B499003030D4 /* Resources */,
+				C23A9CB96E7CA9F2C900ED53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBF61E52373B49C003030D4 /* Build configuration list for PBXNativeTarget "okenealsaTests" */;
 			buildPhases = (
+				AFCCC2FC8C47EA31FDD33FB4 /* [CP] Check Pods Manifest.lock */,
 				ACBF61CA2373B49C003030D4 /* Sources */,
 				ACBF61CB2373B49C003030D4 /* Frameworks */,
 				ACBF61CC2373B49C003030D4 /* Resources */,
+				74E60E867D07C095459EC81B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACBF61E82373B49C003030D4 /* Build configuration list for PBXNativeTarget "okenealsaUITests" */;
 			buildPhases = (
+				7B255BD05FCC0BDA5A6E9030 /* [CP] Check Pods Manifest.lock */,
 				ACBF61D52373B49C003030D4 /* Sources */,
 				ACBF61D62373B49C003030D4 /* Frameworks */,
 				ACBF61D72373B49C003030D4 /* Resources */,
+				6996D30F0354F33E7312055C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +297,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67BC5FAC4B08F1D837A7A349 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-okenealsa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6996D30F0354F33E7312055C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74E60E867D07C095459EC81B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B255BD05FCC0BDA5A6E9030 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-okenealsa-okenealsaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFCCC2FC8C47EA31FDD33FB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-okenealsaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23A9CB96E7CA9F2C900ED53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okenealsa/Pods-okenealsa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okenealsa/Pods-okenealsa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-okenealsa/Pods-okenealsa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACBF61B62373B499003030D4 /* Sources */ = {
@@ -430,6 +597,7 @@
 		};
 		ACBF61E32373B49C003030D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC8D1221C553085BDD6A9DB /* Pods-okenealsa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +615,7 @@
 		};
 		ACBF61E42373B49C003030D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43142990BAFFAC4555C60561 /* Pods-okenealsa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +633,7 @@
 		};
 		ACBF61E62373B49C003030D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2484A8326993310768FFB60E /* Pods-okenealsaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +654,7 @@
 		};
 		ACBF61E72373B49C003030D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5531C343C345BB19014B90 /* Pods-okenealsaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +675,7 @@
 		};
 		ACBF61E92373B49C003030D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A5591F690499BFEDAABBDE /* Pods-okenealsa-okenealsaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +695,7 @@
 		};
 		ACBF61EA2373B49C003030D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7485037A2221908E58623957 /* Pods-okenealsa-okenealsaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

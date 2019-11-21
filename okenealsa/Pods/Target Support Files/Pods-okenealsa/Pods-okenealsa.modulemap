@@ -1,0 +1,6 @@
+framework module Pods_okenealsa {
+  umbrella header "Pods-okenealsa-umbrella.h"
+
+  export *
+  module * { export * }
+}
