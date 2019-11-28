@@ -21,9 +21,9 @@ class InputViewController: UIViewController {
     @IBOutlet weak var category: UITextField!
     @IBOutlet weak var contents: UITextField!
     
-    var toolBar:UIToolbar!
-    
-    var datePicker: UIDatePicker = UIDatePicker()
+//    var toolBar:UIToolbar!
+//
+//    var datePicker: UIDatePicker = UIDatePicker()
 
     override func viewDidLoad() {
         super.viewDidLoad()
