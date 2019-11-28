@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		23FC159E984DB8CA16449290 /* Pods_okenealsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */; };
-		51B3EBF823876AD20003416E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3EBF723876AD20003416E /* LoginViewController.swift */; };
+		AC568F75238678B100D480B1 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC568F74238678B100D480B1 /* InputViewController.swift */; };
 		ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BD2373B499003030D4 /* AppDelegate.swift */; };
 		ACBF61C02373B499003030D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BF2373B499003030D4 /* ViewController.swift */; };
-		ACBF61C32373B499003030D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF61C12373B499003030D4 /* Main.storyboard */; };
+		ACBF61C32373B499003030D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF61C12373B499003030D4 /* Main.storyboard */; settings = {ASSET_TAGS = (inputSpending, ); }; };
 		ACBF61C52373B49C003030D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBF61C42373B49C003030D4 /* Assets.xcassets */; };
 		ACBF61C82373B49C003030D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBF61C62373B49C003030D4 /* LaunchScreen.storyboard */; };
 		ACBF61D32373B49C003030D4 /* okenealsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61D22373B49C003030D4 /* okenealsaTests.swift */; };
@@ -41,11 +41,11 @@
 		139D7B279C290FCD2C568636 /* Pods_okenealsa_okenealsaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsa_okenealsaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2484A8326993310768FFB60E /* Pods-okenealsaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsaTests.debug.xcconfig"; path = "Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43142990BAFFAC4555C60561 /* Pods-okenealsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa.release.xcconfig"; path = "Target Support Files/Pods-okenealsa/Pods-okenealsa.release.xcconfig"; sourceTree = "<group>"; };
-		51B3EBF723876AD20003416E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68A5591F690499BFEDAABBDE /* Pods-okenealsa-okenealsaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.debug.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D5531C343C345BB19014B90 /* Pods-okenealsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsaTests.release.xcconfig"; path = "Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests.release.xcconfig"; sourceTree = "<group>"; };
 		7485037A2221908E58623957 /* Pods-okenealsa-okenealsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.release.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC568F74238678B100D480B1 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		ACBF61BA2373B499003030D4 /* okenealsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okenealsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF61BD2373B499003030D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACBF61BF2373B499003030D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			children = (
 				ACBF61BD2373B499003030D4 /* AppDelegate.swift */,
 				ACBF61BF2373B499003030D4 /* ViewController.swift */,
-				51B3EBF723876AD20003416E /* LoginViewController.swift */,
+				AC568F74238678B100D480B1 /* InputViewController.swift */,
 				ACBF61C12373B499003030D4 /* Main.storyboard */,
 				ACBF61C42373B49C003030D4 /* Assets.xcassets */,
 				ACBF61C62373B49C003030D4 /* LaunchScreen.storyboard */,
@@ -236,6 +236,9 @@
 		ACBF61B22373B499003030D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					inputSpending,
+				);
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "松岡　隆斗";
@@ -425,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51B3EBF823876AD20003416E /* LoginViewController.swift in Sources */,
+				AC568F75238678B100D480B1 /* InputViewController.swift in Sources */,
 				ACBF61C02373B499003030D4 /* ViewController.swift in Sources */,
 				ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */,
 			);
