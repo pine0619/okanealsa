@@ -44,4 +44,3 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var text_date: UITextField!
 }
-
