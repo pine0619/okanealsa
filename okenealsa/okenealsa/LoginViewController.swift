@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  okenealsa
 //
-//  Created by 島尻龍之介 on 2019/11/22.
+//  Created by 島尻龍之介 on 2019/11/28.
 //  Copyright © 2019 松岡　隆斗. All rights reserved.
 //
 
@@ -17,10 +17,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBOutlet weak var username: UITextField!
-    var username_data:String = ""
+    var userName:String = ""
     
     @IBOutlet weak var password: UITextField!
-    var password_data:String = ""
+    var passWord:String = ""
     
     var alertController: UIAlertController!
     func alert(title:String, message:String) {
@@ -33,18 +33,19 @@ class LoginViewController: UIViewController {
         present(alertController, animated: true)
     }
     
-    @IBAction func signup(_ sender: Any) {
-        username_data = username.text!
-        password_data = password.text!
+    @IBAction func Login(_ sender: Any) {
+        userName = username.text!
+        passWord = password.text!
         
-        if (username_data == "" || password_data == "") {
-            alert(title: "入力漏れ",message: "username,passwordを入力してください")
+        if (userName == "" || passWord == ""){
+            alert(title: "入力ミス", message: "username,passwordを入力してください")
         }
         else{
-            self.performSegue(withIdentifier: "Login", sender:nil)
+            self.performSegue(withIdentifier: "Login", sender: nil)
         }
+        
     }
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -52,5 +53,6 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
+    */
+
 }
