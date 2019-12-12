@@ -16,14 +16,21 @@ class Spending: Object {
     @objc dynamic var contents = ""
 }
 
-class InputViewController: UIViewController, UITextFieldDelegate{
+class InputViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource{
+    
     @IBOutlet weak var price: UITextField!
     @IBOutlet weak var category: UITextField!
     @IBOutlet weak var contents: UITextField!
     @IBOutlet weak var date: UITextField!
-    
+        
     private var datePicker: UIDatePicker?
     let dateFormatter = DateFormatter()
+    var dateToolbar = UIToolbar()
+    var alert = UIAlertController()
+    
+    let pickerView = UIPickerView()
+    let catogoryList = ["食費", "交遊費", "生活費", "その他"]
+
 
     
     override func viewDidLoad() {
@@ -44,17 +51,36 @@ class InputViewController: UIViewController, UITextFieldDelegate{
         date.inputView = datePicker   //textfieldに値を代入
         
         // UIToolbarを設定
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
+        dateToolbar.sizeToFit()
         
         // Doneボタンを設定(押下時doneClickedが起動)
         let flexibleItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         let doneButton: UIBarButtonItem = UIBarButtonItem(title: "done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(doneClicked(_:)))
+        let DoneButton: UIBarButtonItem = UIBarButtonItem(title: "done", style: UIBarButtonItem.Style.plain, target: self, action: #selector(doneClicked(_:)))
         let todayButton: UIBarButtonItem = UIBarButtonItem(title: "today", style: UIBarButtonItem.Style.plain, target: self, action: #selector(todayClicked(_:)))
         // アイテムを配置
-        toolbar.setItems([flexibleItem, todayButton, flexibleItem, doneButton, flexibleItem], animated: true)
+        dateToolbar.setItems([flexibleItem, todayButton, flexibleItem, DoneButton, flexibleItem], animated: true)
         // FieldにToolbarを追加
-        date.inputAccessoryView = toolbar
+        date.inputAccessoryView = dateToolbar
+        
+        //カテゴリ選択
+        category.text = catogoryList[3]
+        
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        pickerView.showsSelectionIndicator = true
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        toolbar.setItems([doneButton], animated: true)
+        
+        category.inputAccessoryView = toolbar
+        price.inputAccessoryView = toolbar
+        contents.inputAccessoryView = toolbar
+
+        category.inputView = pickerView
+        category.inputAccessoryView = toolbar
+        
     }
     
     func getToday() -> String {
@@ -77,20 +103,21 @@ class InputViewController: UIViewController, UITextFieldDelegate{
     
     //入力決定のボタンが押された際にDBにデータを保存する
     @IBAction func bottonPress(_ sender: Any) {
-        let mySpending = Spending()
-        mySpending.date = date.text!
-        mySpending.category = category.text!
-        mySpending.price =  Int(price.text!)!
-        mySpending.contents = contents.text!
-        
-        let realm = try! Realm()
-        
-        try! realm.write{
-            realm.add(mySpending)
+        if(price.text == ""){
+            alert(title: "入力ミス", message:"金額を記入してください")
+        } else {
+            let mySpending = Spending()
+            mySpending.date = date.text!
+            mySpending.category = category.text!
+            mySpending.price =  Int(price.text!)!
+            mySpending.contents = contents.text!
+            let realm = try! Realm()
+            try! realm.write{
+                realm.add(mySpending)
+            }
+            let data = realm.objects(Spending.self).filter("price > 0")
+            print(data)
         }
-        
-        let data = realm.objects(Spending.self).filter("price > 0")
-        print(data)
     }
     
     //textfield以外に触れるとキーボードを閉じる
@@ -102,6 +129,36 @@ class InputViewController: UIViewController, UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return catogoryList.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return catogoryList[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        category.text = catogoryList[row]
+    }
+    
+    @objc func done() {
+        category.endEditing(true)
+    }
+
+    func alert(title:String, message:String) {
+        alert = UIAlertController(title: title,
+                                            message: message,
+                                            preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK",
+                                                style: .default,
+                                                handler: nil))
+        present(alert, animated: true)
     }
     
 
