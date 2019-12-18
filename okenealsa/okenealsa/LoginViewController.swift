@@ -53,6 +53,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate{
         }
         
     }
+    
+    @IBAction func Tosignup(_ sender: Any) {
+        self.performSegue(withIdentifier: "tosignup", sender: nil)
+    }
     /*
     // MARK: - Navigation
 
