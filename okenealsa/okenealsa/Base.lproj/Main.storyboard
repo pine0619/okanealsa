@@ -18,17 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-mE-mIm" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="92" y="97" width="654" height="616"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MV-bE-aBR">
                                 <rect key="frame" x="379" y="906" width="77" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="出費入力"/>
                                 <connections>
                                     <segue destination="8Nv-0Z-26t" kind="modal" id="ewK-7R-X9t"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-mE-mIm" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="92" y="97" width="654" height="616"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNc-B6-Ne3">
+                                <rect key="frame" x="622" y="917" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="年間グラフ"/>
+                                <connections>
+                                    <segue destination="BrZ-MJ-Pmp" kind="show" id="e1a-PJ-QqT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="-178" y="-648"/>
         </scene>
-        <!--View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="otd-xt-ILi">
             <objects>
-                <viewController id="BrZ-MJ-Pmp" sceneMemberID="viewController">
+                <viewController id="BrZ-MJ-Pmp" customClass="ChartViewController" customModule="okenealsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="loW-vB-Qsd">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,14 +167,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qk6-gH-rtC" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="138" y="215" width="593" height="683"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoJ-PA-fLC">
+                                <rect key="frame" x="90" y="67" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="vAn-ot-E94"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PYe-rk-nsn"/>
                     </view>
+                    <connections>
+                        <outlet property="barChartView" destination="qk6-gH-rtC" id="2V4-vB-xSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRh-Ot-mwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50" y="97"/>
+            <point key="canvasLocation" x="49.640287769784173" y="96.582733812949641"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Rca-CA-rC7">
@@ -294,6 +318,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ESl-fR-TvV"/>
+        <segue reference="vAn-ot-E94"/>
     </inferredMetricsTieBreakers>
 </document>
