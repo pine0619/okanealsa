@@ -11,6 +11,7 @@
 		51ADFD4D238FDF4F008A1F05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFD4C238FDF4F008A1F05 /* LoginViewController.swift */; };
 		51ADFD4F239DA333008A1F05 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFD4E239DA333008A1F05 /* signupViewController.swift */; };
 		A55A9A3923D62FB400DF384E /* MonthGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9A3823D62FB400DF384E /* MonthGraphController.swift */; };
+		A55A9A3B23D6336E00DF384E /* MoneyManagementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */; };
 		AC568F75238678B100D480B1 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC568F74238678B100D480B1 /* InputViewController.swift */; };
 		ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BD2373B499003030D4 /* AppDelegate.swift */; };
 		ACBF61C02373B499003030D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BF2373B499003030D4 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 		7485037A2221908E58623957 /* Pods-okenealsa-okenealsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.release.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55A9A3823D62FB400DF384E /* MonthGraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthGraphController.swift; sourceTree = "<group>"; };
+		A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagementController.swift; sourceTree = "<group>"; };
 		AC568F74238678B100D480B1 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		ACBF61BA2373B499003030D4 /* okenealsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okenealsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF61BD2373B499003030D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				ACBF61BF2373B499003030D4 /* ViewController.swift */,
 				AC568F74238678B100D480B1 /* InputViewController.swift */,
 				A55A9A3823D62FB400DF384E /* MonthGraphController.swift */,
+				A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */,
 				ACBF61C12373B499003030D4 /* Main.storyboard */,
 				ACBF61C42373B49C003030D4 /* Assets.xcassets */,
 				ACBF61C62373B49C003030D4 /* LaunchScreen.storyboard */,
@@ -440,6 +443,7 @@
 				51ADFD4D238FDF4F008A1F05 /* LoginViewController.swift in Sources */,
 				AC568F75238678B100D480B1 /* InputViewController.swift in Sources */,
 				51ADFD4F239DA333008A1F05 /* signupViewController.swift in Sources */,
+				A55A9A3B23D6336E00DF384E /* MoneyManagementController.swift in Sources */,
 				A55A9A3923D62FB400DF384E /* MonthGraphController.swift in Sources */,
 				ACBF61C02373B499003030D4 /* ViewController.swift in Sources */,
 				ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */,
