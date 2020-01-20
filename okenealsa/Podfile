@@ -7,6 +7,7 @@ target 'okenealsa' do
 
   # Pods for okenealsa
   pod 'RealmSwift'
+  pod 'Charts'
 
   target 'okenealsaTests' do
     inherit! :search_paths
