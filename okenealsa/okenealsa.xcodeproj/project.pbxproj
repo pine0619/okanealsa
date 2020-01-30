@@ -12,6 +12,10 @@
 		51ADFD4F239DA333008A1F05 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFD4E239DA333008A1F05 /* signupViewController.swift */; };
 		A55A9A3923D62FB400DF384E /* MonthGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9A3823D62FB400DF384E /* MonthGraphController.swift */; };
 		A55A9A3B23D6336E00DF384E /* MoneyManagementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */; };
+		A5939D0B23E2072100136696 /* FoodExpensesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5939D0A23E2072100136696 /* FoodExpensesController.swift */; };
+		A5939D0D23E20B1B00136696 /* CommunionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5939D0C23E20B1B00136696 /* CommunionController.swift */; };
+		A5939D0F23E20B3900136696 /* LifeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5939D0E23E20B3800136696 /* LifeController.swift */; };
+		A5939D1123E20B5600136696 /* OtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5939D1023E20B5600136696 /* OtherController.swift */; };
 		AC568F75238678B100D480B1 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC568F74238678B100D480B1 /* InputViewController.swift */; };
 		ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BD2373B499003030D4 /* AppDelegate.swift */; };
 		ACBF61C02373B499003030D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF61BF2373B499003030D4 /* ViewController.swift */; };
@@ -53,6 +57,10 @@
 		7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55A9A3823D62FB400DF384E /* MonthGraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthGraphController.swift; sourceTree = "<group>"; };
 		A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagementController.swift; sourceTree = "<group>"; };
+		A5939D0A23E2072100136696 /* FoodExpensesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodExpensesController.swift; sourceTree = "<group>"; };
+		A5939D0C23E20B1B00136696 /* CommunionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunionController.swift; sourceTree = "<group>"; };
+		A5939D0E23E20B3800136696 /* LifeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeController.swift; sourceTree = "<group>"; };
+		A5939D1023E20B5600136696 /* OtherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherController.swift; sourceTree = "<group>"; };
 		AC568F74238678B100D480B1 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		ACBF61BA2373B499003030D4 /* okenealsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okenealsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBF61BD2373B499003030D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				ACBF61BD2373B499003030D4 /* AppDelegate.swift */,
+				A5939D0E23E20B3800136696 /* LifeController.swift */,
+				A5939D1023E20B5600136696 /* OtherController.swift */,
+				A5939D0C23E20B1B00136696 /* CommunionController.swift */,
+				A5939D0A23E2072100136696 /* FoodExpensesController.swift */,
 				ACBF61BF2373B499003030D4 /* ViewController.swift */,
 				AC568F74238678B100D480B1 /* InputViewController.swift */,
 				A55A9A3823D62FB400DF384E /* MonthGraphController.swift */,
@@ -443,9 +455,13 @@
 				51ADFD4D238FDF4F008A1F05 /* LoginViewController.swift in Sources */,
 				AC568F75238678B100D480B1 /* InputViewController.swift in Sources */,
 				51ADFD4F239DA333008A1F05 /* signupViewController.swift in Sources */,
+				A5939D0F23E20B3900136696 /* LifeController.swift in Sources */,
+				A5939D1123E20B5600136696 /* OtherController.swift in Sources */,
 				A55A9A3B23D6336E00DF384E /* MoneyManagementController.swift in Sources */,
 				A55A9A3923D62FB400DF384E /* MonthGraphController.swift in Sources */,
 				ACBF61C02373B499003030D4 /* ViewController.swift in Sources */,
+				A5939D0D23E20B1B00136696 /* CommunionController.swift in Sources */,
+				A5939D0B23E2072100136696 /* FoodExpensesController.swift in Sources */,
 				ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

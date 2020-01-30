@@ -67,7 +67,7 @@ class MoneyController: UIViewController{
         }
         
         let FoodtextView = UITextView()     //TextViewの配置
-        FoodtextView.frame = CGRect(x: 100, y: 30, width: 600, height: 250)       //サイズ
+        FoodtextView.frame = CGRect(x: 100, y: 100, width: 600, height: 250)       //サイズ
         FoodtextView.textColor = UIColor.green        //文字の色を設定
         FoodtextView.font = UIFont.systemFont(ofSize: 30)       //文字のサイズを設定
         FoodtextView.text = "\(FoodText)"        //文字の入力内容
