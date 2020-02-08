@@ -13,6 +13,7 @@ class MoneyController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.view.addBackground(name: "blue_mizutama.jpg")
         
         var FoodText = ""
         var ClothText = ""
@@ -67,8 +68,9 @@ class MoneyController: UIViewController{
         }
         
         let FoodtextView = UITextView()     //TextViewの配置
-        FoodtextView.frame = CGRect(x: 100, y: 100, width: 600, height: 250)       //サイズ
+        FoodtextView.frame = CGRect(x: 100, y: 30, width: 600, height: 250)       //サイズ
         FoodtextView.textColor = UIColor.green        //文字の色を設定
+        FoodtextView.backgroundColor = UIColor.darkGray
         FoodtextView.font = UIFont.systemFont(ofSize: 30)       //文字のサイズを設定
         FoodtextView.text = "\(FoodText)"        //文字の入力内容
         FoodtextView.isEditable = false
@@ -76,7 +78,8 @@ class MoneyController: UIViewController{
         
         let ClothtextView = UITextView()     //TextViewの配置
         ClothtextView.frame = CGRect(x: 100, y: 310, width: 600, height: 250)       //サイズ
-        ClothtextView.textColor = UIColor.yellow        //文字の色を設定
+        ClothtextView.textColor = UIColor.init(red: 255, green: 255, blue: 0, alpha: 1)        //文字の色を設定
+        ClothtextView.backgroundColor = UIColor.darkGray
         ClothtextView.font = UIFont.systemFont(ofSize: 30)       //文字のサイズを設定
         ClothtextView.text = "\(ClothText)"        //文字の入力内容
         ClothtextView.isEditable = false
@@ -85,6 +88,7 @@ class MoneyController: UIViewController{
         let PlaytextView = UITextView()     //TextViewの配置
         PlaytextView.frame = CGRect(x: 100, y: 590, width: 600, height: 250)       //サイズ
         PlaytextView.textColor = UIColor.orange        //文字の色を設定
+        PlaytextView.backgroundColor = UIColor.darkGray
         PlaytextView.font = UIFont.systemFont(ofSize: 30)       //文字のサイズを設定
         PlaytextView.text = "\(PlayText)"        //文字の入力内容
         PlaytextView.isEditable = false
@@ -92,7 +96,8 @@ class MoneyController: UIViewController{
         
         let FreetextView = UITextView()     //TextViewの配置
         FreetextView.frame = CGRect(x: 100, y: 870, width: 600, height: 250)       //サイズ
-        FreetextView.textColor = UIColor.blue        //文字の色を設定
+        FreetextView.textColor = UIColor.init(red: 0, green: 255, blue: 255, alpha: 1)        //文字の色を設定
+        FreetextView.backgroundColor = UIColor.darkGray
         FreetextView.font = UIFont.systemFont(ofSize: 30)       //文字のサイズを設定
         FreetextView.text = "\(FreeText)"        //文字の入力内容
         FreetextView.isEditable = false

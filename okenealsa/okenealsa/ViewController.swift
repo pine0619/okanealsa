@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.addBackground(name: "background.jpg")
         
         pieChartsView.delegate = self as? ChartViewDelegate
         

@@ -10,12 +10,13 @@ import UIKit
 import RealmSwift
 import Charts
 
-class ChartViewController: UIViewController {
+class MonthGraphController: UIViewController {
     // ここに棒グラフを描きます
     @IBOutlet weak var barChartView: BarChartView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.view.addBackground(name: "color3.jpg")
         
         //月ごとの金額を格納するための変数を用意
         var JanPrice : Double = 0
@@ -101,10 +102,10 @@ class ChartViewController: UIViewController {
         // グラフの棒をニョキッとアニメーションさせる
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
         // 横に赤いボーダーラインを描く
-        let ll = ChartLimitLine(limit: 10.0, label: "Target")
+        let ll = ChartLimitLine(limit: 10.0, label: "")
         barChartView.rightAxis.addLimitLine(ll)
         // グラフのタイトル
-        barChartView.chartDescription?.text = "Cool Graph!"
+        barChartView.chartDescription?.text = "Year Graph"
     }
     
 }
