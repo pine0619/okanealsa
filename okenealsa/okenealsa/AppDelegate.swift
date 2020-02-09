@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert,.sound]){(granted, error) in
+            
+        }
+        center.delegate = self as? UNUserNotificationCenterDelegate;
         return true
     }
 
@@ -27,6 +33,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        //　通知設定に必要なクラスをインスタンス化
+        let trigger: UNNotificationTrigger
+        let content = UNMutableNotificationContent()
+        var notificationTime = DateComponents()
+        
+        // トリガー設定
+        notificationTime.hour = 22
+        notificationTime.minute = 00
+        trigger = UNCalendarNotificationTrigger(dateMatching: notificationTime, repeats: true)
+        
+        // 通知内容の設定
+        content.title = ""
+        content.body = "今日の出費を入力しよう"
+        content.sound = UNNotificationSound.default
+        
+        // 通知スタイルを指定
+        let request = UNNotificationRequest(identifier: "uuid", content: content, trigger: trigger)
+        // 通知をセット
+        let center = UNUserNotificationCenter.current()
+        center.add(request, withCompletionHandler: nil)
+
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -40,7 +68,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-
