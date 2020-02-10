@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uos-IX-sFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="-648"/>
+            <point key="canvasLocation" x="-178.41726618705036" y="-648.02158273381292"/>
         </scene>
         <!--Month Graph Controller-->
         <scene sceneID="otd-xt-ILi">
@@ -419,6 +419,14 @@
                                     <segue destination="JuM-bY-KdM" kind="show" id="uDi-S7-9qE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-5Q-sv6">
+                                <rect key="frame" x="394" y="541" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ijn-30-OcB" kind="show" id="yC7-RA-aAs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EWK-pZ-Axm"/>
@@ -520,6 +528,12 @@
                                 <color key="textColor" red="0.27989421170000001" green="0.98034731220000004" blue="0.9499244966" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1TJ-1y-n6l">
+                                <rect key="frame" x="130" y="98" width="633" height="670"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8WW-YJ-niC"/>
@@ -529,15 +543,74 @@
                         <outlet property="Food" destination="aCg-Fa-Fw5" id="M0h-0e-Zgz"/>
                         <outlet property="Life" destination="Gko-Ds-XEP" id="I6O-yW-QIp"/>
                         <outlet property="Other" destination="hDZ-88-O2O" id="Yaw-RK-sdE"/>
+                        <outlet property="Text" destination="1TJ-1y-n6l" id="mB1-dZ-Bs6"/>
+                        <segue destination="ijn-30-OcB" kind="show" identifier="toDelete" id="zxx-L8-BWW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTO-ES-bdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1617.2661870503598" y="1714.748201438849"/>
         </scene>
+        <!--Delete Controller-->
+        <scene sceneID="QB3-xO-ya5">
+            <objects>
+                <viewController id="ijn-30-OcB" customClass="DeleteController" customModule="okenealsa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YZg-Ox-hqo">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="間違えた日のデータを選んでね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-K4-hDM">
+                                <rect key="frame" x="207" y="263" width="385" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.98034731220000004" green="0.51953640089999997" blue="0.054415947589999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq5-lN-tBd">
+                                <rect key="frame" x="50" y="71" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <segue destination="JuM-bY-KdM" kind="show" id="wQJ-AQ-lga"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oy7-YM-jk3">
+                                <rect key="frame" x="207" y="350" width="385" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHn-De-9Mp">
+                                <rect key="frame" x="282" y="594" width="234" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="delete" image="delete.jpg"/>
+                                <connections>
+                                    <action selector="bottonPress:" destination="ijn-30-OcB" eventType="touchUpInside" id="P5h-hU-Z0u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="toDelete">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <viewLayoutGuide key="safeArea" id="E46-fy-Vje"/>
+                    </view>
+                    <connections>
+                        <outlet property="Text" destination="Oy7-YM-jk3" id="h0Y-Ot-lVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxK-Oa-eK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2422.3021582733813" y="1714.748201438849"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="delete.jpg" width="450" height="468"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DkL-o6-Hoi"/>
-        <segue reference="c06-gJ-zEl"/>
+        <segue reference="zxx-L8-BWW"/>
+        <segue reference="wQJ-AQ-lga"/>
+        <segue reference="X2t-wa-gvr"/>
+        <segue reference="mmC-qW-pWf"/>
     </inferredMetricsTieBreakers>
 </document>

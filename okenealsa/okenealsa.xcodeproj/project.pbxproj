@@ -17,6 +17,9 @@
 		A53C339E23EF6F9400C64D68 /* ChoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C339D23EF6F9400C64D68 /* ChoiceController.swift */; };
 		A53C33A023EF709100C64D68 /* color2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53C339F23EF709100C64D68 /* color2.jpg */; };
 		A53C33A223EF72DE00C64D68 /* color3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53C33A123EF72DE00C64D68 /* color3.jpg */; };
+		A53C33A423F1B6E300C64D68 /* DeleteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C33A323F1B6E300C64D68 /* DeleteController.swift */; };
+		A53C33A623F204E300C64D68 /* parpul_mizutama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53C33A523F204E300C64D68 /* parpul_mizutama.jpg */; };
+		A53C33A823F2064800C64D68 /* delete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53C33A723F2064700C64D68 /* delete.jpg */; };
 		A55A9A3923D62FB400DF384E /* MonthGraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9A3823D62FB400DF384E /* MonthGraphController.swift */; };
 		A55A9A3B23D6336E00DF384E /* MoneyManagementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */; };
 		A5939D0B23E2072100136696 /* FoodExpensesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5939D0A23E2072100136696 /* FoodExpensesController.swift */; };
@@ -66,6 +69,9 @@
 		A53C339D23EF6F9400C64D68 /* ChoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceController.swift; sourceTree = "<group>"; };
 		A53C339F23EF709100C64D68 /* color2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = color2.jpg; sourceTree = "<group>"; };
 		A53C33A123EF72DE00C64D68 /* color3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = color3.jpg; sourceTree = "<group>"; };
+		A53C33A323F1B6E300C64D68 /* DeleteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteController.swift; sourceTree = "<group>"; };
+		A53C33A523F204E300C64D68 /* parpul_mizutama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parpul_mizutama.jpg; sourceTree = "<group>"; };
+		A53C33A723F2064700C64D68 /* delete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = delete.jpg; sourceTree = "<group>"; };
 		A55A9A3823D62FB400DF384E /* MonthGraphController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthGraphController.swift; sourceTree = "<group>"; };
 		A55A9A3A23D6336E00DF384E /* MoneyManagementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagementController.swift; sourceTree = "<group>"; };
 		A5939D0A23E2072100136696 /* FoodExpensesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodExpensesController.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				A53C339F23EF709100C64D68 /* color2.jpg */,
 				A53C33A123EF72DE00C64D68 /* color3.jpg */,
 				A53C339523EF5F1700C64D68 /* blue_mizutama.jpg */,
+				A53C33A523F204E300C64D68 /* parpul_mizutama.jpg */,
+				A53C33A723F2064700C64D68 /* delete.jpg */,
+				A53C33A323F1B6E300C64D68 /* DeleteController.swift */,
 				ACBF61BD2373B499003030D4 /* AppDelegate.swift */,
 				A53C339323EF5AA800C64D68 /* addBackground.swift */,
 				A5939D0A23E2072100136696 /* FoodExpensesController.swift */,
@@ -321,9 +330,11 @@
 				A53C33A023EF709100C64D68 /* color2.jpg in Resources */,
 				A53C339C23EF615300C64D68 /* background.jpg in Resources */,
 				A53C33A223EF72DE00C64D68 /* color3.jpg in Resources */,
+				A53C33A623F204E300C64D68 /* parpul_mizutama.jpg in Resources */,
 				ACBF61C52373B49C003030D4 /* Assets.xcassets in Resources */,
 				A53C339A23EF608300C64D68 /* color.jpg in Resources */,
 				ACBF61C32373B499003030D4 /* Main.storyboard in Resources */,
+				A53C33A823F2064800C64D68 /* delete.jpg in Resources */,
 				A53C339623EF5F1700C64D68 /* blue_mizutama.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +489,7 @@
 				A53C339E23EF6F9400C64D68 /* ChoiceController.swift in Sources */,
 				ACBF61C02373B499003030D4 /* ViewController.swift in Sources */,
 				A5939D0B23E2072100136696 /* FoodExpensesController.swift in Sources */,
+				A53C33A423F1B6E300C64D68 /* DeleteController.swift in Sources */,
 				ACBF61BE2373B499003030D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
