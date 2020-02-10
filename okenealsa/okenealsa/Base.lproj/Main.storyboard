@@ -420,9 +420,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EI-5Q-sv6">
-                                <rect key="frame" x="394" y="541" width="46" height="30"/>
+                                <rect key="frame" x="660" y="933" width="91" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="削除"/>
                                 <connections>
                                     <segue destination="ijn-30-OcB" kind="show" id="yC7-RA-aAs"/>
                                 </connections>
@@ -434,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIe-7S-JGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-858" y="875"/>
+            <point key="canvasLocation" x="-858.27338129496411" y="874.64028776978421"/>
         </scene>
         <!--Food Expenses Controller-->
         <scene sceneID="mc7-fQ-JnC">
@@ -544,7 +545,6 @@
                         <outlet property="Life" destination="Gko-Ds-XEP" id="I6O-yW-QIp"/>
                         <outlet property="Other" destination="hDZ-88-O2O" id="Yaw-RK-sdE"/>
                         <outlet property="Text" destination="1TJ-1y-n6l" id="mB1-dZ-Bs6"/>
-                        <segue destination="ijn-30-OcB" kind="show" identifier="toDelete" id="zxx-L8-BWW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTO-ES-bdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -571,7 +571,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BACK"/>
                                 <connections>
-                                    <segue destination="JuM-bY-KdM" kind="show" id="wQJ-AQ-lga"/>
+                                    <segue destination="ok3-Py-86v" kind="show" id="VNj-EQ-99B"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oy7-YM-jk3">
@@ -608,9 +608,7 @@
         <image name="delete.jpg" width="450" height="468"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zxx-L8-BWW"/>
-        <segue reference="wQJ-AQ-lga"/>
-        <segue reference="X2t-wa-gvr"/>
-        <segue reference="mmC-qW-pWf"/>
+        <segue reference="VNj-EQ-99B"/>
+        <segue reference="c06-gJ-zEl"/>
     </inferredMetricsTieBreakers>
 </document>
