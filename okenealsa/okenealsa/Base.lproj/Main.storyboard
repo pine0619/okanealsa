@@ -473,6 +473,7 @@
                     </view>
                     <connections>
                         <outlet property="Text" destination="Oy7-YM-jk3" id="h0Y-Ot-lVc"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="back_to_home" id="z3I-8V-HIm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxK-Oa-eK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -485,6 +486,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VNj-EQ-99B"/>
-        <segue reference="c06-gJ-zEl"/>
+        <segue reference="z3I-8V-HIm"/>
     </inferredMetricsTieBreakers>
 </document>
