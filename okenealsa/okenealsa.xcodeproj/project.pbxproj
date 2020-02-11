@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		23FC159E984DB8CA16449290 /* Pods_okenealsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F052F02F27D76C39357CDBA /* Pods_okenealsaTests.framework */; };
-		51ADFD4D238FDF4F008A1F05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFD4C238FDF4F008A1F05 /* LoginViewController.swift */; };
-		51ADFD4F239DA333008A1F05 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51ADFD4E239DA333008A1F05 /* signupViewController.swift */; };
 		A53C339423EF5AA800C64D68 /* addBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C339323EF5AA800C64D68 /* addBackground.swift */; };
 		A53C339623EF5F1700C64D68 /* blue_mizutama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53C339523EF5F1700C64D68 /* blue_mizutama.jpg */; };
 		A53C339A23EF608300C64D68 /* color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53C339923EF608300C64D68 /* color.jpg */; };
@@ -56,8 +54,6 @@
 		139D7B279C290FCD2C568636 /* Pods_okenealsa_okenealsaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okenealsa_okenealsaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2484A8326993310768FFB60E /* Pods-okenealsaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsaTests.debug.xcconfig"; path = "Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43142990BAFFAC4555C60561 /* Pods-okenealsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa.release.xcconfig"; path = "Target Support Files/Pods-okenealsa/Pods-okenealsa.release.xcconfig"; sourceTree = "<group>"; };
-		51ADFD4C238FDF4F008A1F05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		51ADFD4E239DA333008A1F05 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		68A5591F690499BFEDAABBDE /* Pods-okenealsa-okenealsaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.debug.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D5531C343C345BB19014B90 /* Pods-okenealsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsaTests.release.xcconfig"; path = "Target Support Files/Pods-okenealsaTests/Pods-okenealsaTests.release.xcconfig"; sourceTree = "<group>"; };
 		7485037A2221908E58623957 /* Pods-okenealsa-okenealsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okenealsa-okenealsaUITests.release.xcconfig"; path = "Target Support Files/Pods-okenealsa-okenealsaUITests/Pods-okenealsa-okenealsaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,8 +172,6 @@
 				ACBF61C42373B49C003030D4 /* Assets.xcassets */,
 				ACBF61C62373B49C003030D4 /* LaunchScreen.storyboard */,
 				ACBF61C92373B49C003030D4 /* Info.plist */,
-				51ADFD4C238FDF4F008A1F05 /* LoginViewController.swift */,
-				51ADFD4E239DA333008A1F05 /* signupViewController.swift */,
 			);
 			path = okenealsa;
 			sourceTree = "<group>";
@@ -480,10 +474,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51ADFD4D238FDF4F008A1F05 /* LoginViewController.swift in Sources */,
 				A53C339423EF5AA800C64D68 /* addBackground.swift in Sources */,
 				AC568F75238678B100D480B1 /* InputViewController.swift in Sources */,
-				51ADFD4F239DA333008A1F05 /* signupViewController.swift in Sources */,
 				A55A9A3B23D6336E00DF384E /* MoneyManagementController.swift in Sources */,
 				A55A9A3923D62FB400DF384E /* MonthGraphController.swift in Sources */,
 				A53C339E23EF6F9400C64D68 /* ChoiceController.swift in Sources */,
