@@ -105,26 +105,6 @@ class DeleteController: UIViewController, UITextFieldDelegate, UIPickerViewDeleg
     }
     
     @IBAction func bottonPress(_ sender: Any) {
-//        let alert: UIAlertController = UIAlertController(title: "アラート表示", message: "削除してもいいですか？", preferredStyle:  UIAlertController.Style.alert)
-//        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
-//            // ボタンが押された時の処理を書く（クロージャ実装）
-//            (action: UIAlertAction!) -> Void in
-//            print("OK")
-//        })
-//        // キャンセルボタン
-//        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
-//            // ボタンが押された時の処理を書く（クロージャ実装）
-//            (action: UIAlertAction!) -> Void in
-//            print("Cancel")
-//        })
-//        
-//        // ③ UIAlertControllerにActionを追加
-//        alert.addAction(cancelAction)
-//        alert.addAction(defaultAction)
-//        
-//        // ④ Alertを表示
-//        present(alert, animated: true, completion: nil)
-
         let realm = try! Realm()
         var results = realm.objects(Spending.self)
         results = realm.objects(Spending.self).sorted(byKeyPath: "date",ascending: true)
@@ -132,14 +112,35 @@ class DeleteController: UIViewController, UITextFieldDelegate, UIPickerViewDeleg
         let labeltext = Text.text
         var moji = labeltext?.components(separatedBy: " ")
         
-        for i in stride(from: 0, to: results.count, by:1){
-            if(moji?[0] == results[i].date && moji?[1] == results[i].category && moji?[2] == "\(results[i].price)"){
+        let alert: UIAlertController = UIAlertController(title: "アラート表示", message: "削除してもいいですか？", preferredStyle:  UIAlertController.Style.alert)
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            // ボタンが押された時の処理を書く（クロージャ実装）
+            (action: UIAlertAction!) -> Void in
+            for i in stride(from: 0, to: results.count, by:1){
+                if(moji?[0] == results[i].date && moji?[1] == results[i].category && moji?[2] == "\(results[i].price)"){
                     try? realm.write {
-                        Text.text = "削除されたよ"
+                        self.Text.text = "削除されたよ"
                         realm.delete(results[i])
+                        self.performSegue(withIdentifier: "back_to_home", sender: nil)
                     }
                 }
             }
+            print("OK")
+        })
+        // キャンセルボタン
+        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+            // ボタンが押された時の処理を書く（クロージャ実装）
+            (action: UIAlertAction!) -> Void in
+            print("Cancel")
+        })
+        
+        // ③ UIAlertControllerにActionを追加
+        alert.addAction(cancelAction)
+        alert.addAction(defaultAction)
+        
+        // ④ Alertを表示
+        present(alert, animated: true, completion: nil)
+        
         }
     
     
