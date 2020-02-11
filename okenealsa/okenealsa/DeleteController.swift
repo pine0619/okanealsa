@@ -105,6 +105,26 @@ class DeleteController: UIViewController, UITextFieldDelegate, UIPickerViewDeleg
     }
     
     @IBAction func bottonPress(_ sender: Any) {
+//        let alert: UIAlertController = UIAlertController(title: "アラート表示", message: "削除してもいいですか？", preferredStyle:  UIAlertController.Style.alert)
+//        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+//            // ボタンが押された時の処理を書く（クロージャ実装）
+//            (action: UIAlertAction!) -> Void in
+//            print("OK")
+//        })
+//        // キャンセルボタン
+//        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:{
+//            // ボタンが押された時の処理を書く（クロージャ実装）
+//            (action: UIAlertAction!) -> Void in
+//            print("Cancel")
+//        })
+//        
+//        // ③ UIAlertControllerにActionを追加
+//        alert.addAction(cancelAction)
+//        alert.addAction(defaultAction)
+//        
+//        // ④ Alertを表示
+//        present(alert, animated: true, completion: nil)
+
         let realm = try! Realm()
         var results = realm.objects(Spending.self)
         results = realm.objects(Spending.self).sorted(byKeyPath: "date",ascending: true)

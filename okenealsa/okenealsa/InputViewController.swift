@@ -36,12 +36,15 @@ class InputViewController: UIViewController, UITextFieldDelegate, UIPickerViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.addBackground(name: "background.jpg")
         //キーボードを閉じるためのコード
         self.contents.delegate = self
         self.price.delegate = self
         
         dateFormatter.dateFormat = "yyyy年MM月dd日"//日付のフォーマット指定
         date.text = getToday()//今日の日付をデフォルト挿入
+        
         
         //今日以外の日付を選ぶための処理
         datePicker = UIDatePicker()//インスタンス生成
